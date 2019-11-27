@@ -9,6 +9,16 @@ Vue.config.productionTip = false
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
 
+// vant 全量引入
+// import Vant from 'vant';
+// import 'vant/lib/index.css';
+// Vue.use(Vant);
+
+// vant 按需引入
+import { Button } from 'vant';
+import { Icon } from 'vant';
+Vue.use(Button).use(Icon);
+
 new Vue({
   router,
   store,

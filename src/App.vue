@@ -8,10 +8,10 @@
       <li class="footer-bar-item" to="/category">
         <router-link to="/category">分类</router-link>
       </li>
-      <li class="footer-bar-item" >
+      <li class="footer-bar-item">
         <router-link to="/cart">购物车</router-link>
       </li>
-      <li class="footer-bar-item" >
+      <li class="footer-bar-item">
         <router-link to="/profile">我的</router-link>
       </li>
     </ul>
