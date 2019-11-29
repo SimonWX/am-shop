@@ -15,9 +15,8 @@ import '@/assets/js/rem.js'
 // Vue.use(Vant);
 
 // vant 按需引入
-import { Button } from 'vant';
-import { Icon } from 'vant';
-Vue.use(Button).use(Icon);
+import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload} from 'vant';
+Vue.use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem).use(Swipe).use(SwipeItem).use(Lazyload); 
 
 new Vue({
   router,
