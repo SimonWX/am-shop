@@ -39,6 +39,7 @@ Mock.mock('http://www.weichuang.com/list', {
 //mock数据 方式六 全量商品数据
 let Random = Mock.Random;
 let productData = req => {
+  console.log(req)
   let productList = []; //存放信息的数组
   for (let i = 0; i < 100; i++) {
     let product = {
@@ -47,7 +48,7 @@ let productData = req => {
       nameVariety: `推荐商品...${i + 1}`,
       imgHot: Random.dataImage('250x250', `热门商品${i + 1}`),
       imgVariety: Random.dataImage('250x250', `推荐商品${i + 1}`),
-      price: Random.integer(1000, 10000),
+      price: Random.float(1000, 10000).toFixed(2),
       owner: Random.cname()
     };
     productList.push(product);

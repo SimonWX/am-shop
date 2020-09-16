@@ -46,7 +46,7 @@
 import "swiper/dist/css/swiper.css";
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import axios from "axios";
-import url from '@/service.config.js';
+import url from "@/service.config.js";
 export default {
   components: {
     swiper,
@@ -536,7 +536,7 @@ export default {
     // let url3 = "http://www.weichuang.com/regexp";
     // let url4 = "http://www.weichuang.com/list";
     let url5 = url.getVarietyItem;
-    
+
     axios.get(url5).then(res => {
       this.goodList = res.data;
       console.log(res);

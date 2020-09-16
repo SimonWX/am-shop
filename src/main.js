@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
- 
+
 
 Vue.config.productionTip = false
 
@@ -15,8 +15,34 @@ import '@/assets/js/rem.js'
 // Vue.use(Vant);
 
 // vant 按需引入
-import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload} from 'vant';
-Vue.use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem).use(Swipe).use(SwipeItem).use(Lazyload); 
+import { 
+  Button, 
+  Icon, 
+  NavBar, 
+  Tabbar, 
+  TabbarItem, 
+  Swipe, 
+  SwipeItem, 
+  Lazyload, 
+  Tab, 
+  Tabs,
+  Cell, 
+  CellGroup,
+  Field
+} from 'vant';
+Vue.use(Button)
+  .use(Icon)
+  .use(NavBar)
+  .use(Tabbar)
+  .use(TabbarItem)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(Lazyload)
+  .use(Tab)
+  .use(Tabs)
+  .use(Cell)
+  .use(CellGroup)
+  .use(Field);
 
 import '@/mock/mock.js';
 
